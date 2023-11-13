@@ -5,6 +5,14 @@ $ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh
 ```
 ### Changelog
 
+### K1.2.4 STABLE 20231113
+
+**-Fixed script error $DEVICE_CODENAME/buildkernel-log-%Y%m%d-%H%M.txt No such file or directory.**
+
+**-"generate_log_filename" change by "BUILD_KERNEL_LOG".**
+
+**-Fixed some code bugs.**
+
 ### K1.2.3 STABLE 20231113
 
 **-Added "validate_dependencies" & "install_missing_dependencies"**
