@@ -1,5 +1,4 @@
 ### Kyliz
-Script dedicado a compilar un kernel
 ```bash
 $ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh 
 ```
