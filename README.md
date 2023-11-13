@@ -1,6 +1,10 @@
-# kyliz_script
+### Kyliz
 Script dedicado a compilar un kernel
-# Changelog
+##Inicializar
+```bash
+$ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh 
+```
+### Changelog
 
 ### K1.2.3 STABLE 20231113
 
