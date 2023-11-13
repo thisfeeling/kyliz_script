@@ -7,7 +7,7 @@ $ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh
 
 ### K1.2.4 STABLE 20231113
 
-**-Fixed script error $DEVICE_CODENAME/buildkernel-log-%Y%m%d-%H%M.txt No such file or directory.**
+**-Fixed script error $DEVICE_CODENAME/buildkernel-log-$DATE_POSTFIX-$TIME_POSTFIX.txt No such file or directory.**
 
 **-"generate_log_filename" change by "BUILD_KERNEL_LOG".**
 
