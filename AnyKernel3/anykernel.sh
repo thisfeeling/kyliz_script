@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Proximity kernel by PrabhatProxy
+kernel.string=Ali kernel by thisfeeling_dev
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
