@@ -4,6 +4,18 @@ $ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh
 ```
 ### Changelog
 
+### K1.2.5 STABLE 20231118
+
+**-Added "" In some variables.**
+
+**-Improvements to "abort_if_error".**
+
+**-Improvements to "show_status".**
+
+**-Added "validate_environment_variables".**
+
+**-Added "check_os".**
+
 ### K1.2.4 STABLE 20231113
 
 **-Fixed script error $DEVICE_CODENAME/buildkernel-log-$DATE_POSTFIX-$TIME_POSTFIX.txt No such file or directory.**
