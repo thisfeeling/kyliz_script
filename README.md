@@ -4,6 +4,16 @@ $ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh
 ```
 ### Changelog
 
+### K1.2.6 STABLE 20231120
+
+**-Improvements to "download_tools".**
+
+**-Improvements to "download_kernel".**
+
+**-Improvements to "install_dependencies".**
+
+**-Fixed some code bugs.**
+
 ### K1.2.5 STABLE 20231118
 
 **-Added "" In some variables.**
