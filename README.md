@@ -9,16 +9,15 @@
 ```bash
 KERNEL_TREE_BRANCH="11.0"
 KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953"
-DEVICE_CODENAME="ali"
+KERNEL_DEVICE_CODENAME="ali"
 KERNEL_DEFCONFIG="ali_defconfig"
-BUILD_STATUS="UNOFFICIAL"
-BUILD_TYPE="BETA"
-KERNEL_NAME="Perf"
-ARCH="arm64"
-DTC_EXT="dtb"
+KERNEL_STATUS="UNOFFICIAL"
+KERNEL_TYPE="BETA"
+KERNEL_ZIP_NAME="Perf"
+ARCHITECTURE="arm64" #arm64 or arm
+DT_EXT="dtb" #dts or dtb
 CLANG_TREE="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/f8e856556909898bd35ee8eae829437721b5a3db/clang-r353983e.tar.gz"
 CLANG_VERSION="clang-r353983e"
-CLANG_VERSION_STRING="Clang Version 9.0.5"
 CLANG_VERSION_DIR="clang-9"
 ARM_LINUX_ANDROIDEABI_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/refs/heads/pie-release.tar.gz"
 AARCH64_LINUX_ANDROID_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/pie-release.tar.gz"
@@ -38,6 +37,22 @@ AARCH64_LINUX_GNU_VERSION="aarch64-linux-gnu-"
 $ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh 
 ```
 ### All Changelog
+
+### K1.2.7 STABLE 20231123
+
+**-Added "show_system_info".**
+
+**-Added "decision_clean_temp_files".**
+
+**-Deleted variable "CLANG_VERSION_STRING", and was remplazed by "CLANG_TOOLCHAIN_VERSION".**
+
+**-Deleted function "abort_if_error", and was remplazed by "show_status".**
+
+**-Fixed Improvements to "install_dependencies".**
+
+**-Obsolete code was deleted.**
+
+**-Fixed some code bugs.**
 
 ### K1.2.6 STABLE 20231120
 
