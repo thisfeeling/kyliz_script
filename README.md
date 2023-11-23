@@ -42,6 +42,20 @@ AARCH64_LINUX_GNU_VERSION="aarch64-linux-gnu-"
 *  [AnyKernel3](https://github.com/thisfeeling/kyliz_script/tree/kyliz/AnyKernel3)
 *  [Dtbtool](https://github.com/thisfeeling/kyliz_script/tree/kyliz/Dtbtool)
 
+### Configure File "anykernel.sh" Example
+
+```bash
+## AnyKernel setup
+# begin properties
+properties() { '
+kernel.string=Moto G(6) Custom Kernel by thisfeeling
+do.devicecheck=1
+do.modules=0
+do.cleanup=1
+do.cleanuponabort=0
+device.name1=ali #device codename
+```
+
 ### Execution
 ```bash
 $ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh 
