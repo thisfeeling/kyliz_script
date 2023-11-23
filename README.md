@@ -24,6 +24,10 @@ ARM_LINUX_ANDROIDEABI_VERSION="arm-linux-androideabi-"
 AARCH64_LINUX_ANDROID_VERSION="aarch64-linux-android-"
 AARCH64_LINUX_GNU_VERSION="aarch64-linux-gnu-"
 ```
+### Necessary Files "verify_dtb_ziptool"
+
+*  [AnyKernel3](https://github.com/thisfeeling/kyliz_script/tree/kyliz/AnyKernel3)
+*  [Dtbtool](https://github.com/thisfeeling/kyliz_script/tree/kyliz/Dtbtool)
 
 ### Execution
 ```bash
