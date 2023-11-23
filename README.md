@@ -53,8 +53,12 @@ do.devicecheck=1
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
-#device codename
 device.name1=ali
+'; } # end properties
+
+# shell variables
+block=/dev/block/bootdevice/by-name/boot;
+is_slot_device=auto;
 ```
 
 ### Execution
