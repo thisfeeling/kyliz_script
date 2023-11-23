@@ -6,7 +6,7 @@ A shell-based script that allows you to download/compile an Android kernel and a
 
 **-Some processes like "CLANG_TOOLCHAIN_VERSION" are automated and among others.**
 
-**-You can create a custom flashable kernel with this script.** *  [AnyKernel3](https://github.com/ZyCromerZ/AnyKernel3)
+**-You can create a custom flashable kernel with this script.** [AnyKernel3](https://github.com/ZyCromerZ/AnyKernel3)
 
 **-You configure it to your liking and you can compile a kernel with just one command.**
 
