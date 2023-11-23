@@ -53,7 +53,8 @@ do.devicecheck=1
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=ali #device codename
+#device codename
+device.name1=ali
 ```
 
 ### Execution
