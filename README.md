@@ -8,7 +8,7 @@ A shell-based script that allows you to download/compile an Android kernel and a
 
 **-You can create a custom flashable kernel with this script.** [AnyKernel3](https://github.com/ZyCromerZ/AnyKernel3)
 
-**-You configure it to your liking and you can compile a kernel with just one command.**
+**-You configure it to your liking and you can compile a kernel with just one [command](https://github.com/thisfeeling/kyliz_script#execution-kyliz-shell-script).**
 
 ### Releases
 
