@@ -1,5 +1,9 @@
 ### Kyliz Script
 
+### Releases
+
+*  [Stable](https://github.com/thisfeeling/kyliz_script/releases)
+
 ### Script Configuration Example
 
 ```bash
