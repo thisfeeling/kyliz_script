@@ -61,7 +61,7 @@ block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=auto;
 ```
 
-### Execution
+### Execution kyliz shell script
 ```bash
 $ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh 
 ```
