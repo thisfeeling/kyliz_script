@@ -1,8 +1,35 @@
-### Kyliz
+### Kyliz Script
+
+### Script Configuration Example
+
+```bash
+KERNEL_TREE_BRANCH="11.0"
+KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953"
+DEVICE_CODENAME="ali"
+KERNEL_DEFCONFIG="ali_defconfig"
+BUILD_STATUS="UNOFFICIAL"
+BUILD_TYPE="BETA"
+KERNEL_NAME="Perf"
+ARCH="arm64"
+DTC_EXT="dtb"
+CLANG_TREE="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/f8e856556909898bd35ee8eae829437721b5a3db/clang-r353983e.tar.gz"
+CLANG_VERSION="clang-r353983e"
+CLANG_VERSION_STRING="Clang Version 9.0.5"
+CLANG_VERSION_DIR="clang-9"
+ARM_LINUX_ANDROIDEABI_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/refs/heads/pie-release.tar.gz"
+AARCH64_LINUX_ANDROID_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/pie-release.tar.gz"
+AARCH64_LINUX_GNU_TREE="https://github.com/theradcolor/aarch64-linux-gnu"
+AARCH64_LINUX_GNU_TREE_BRANCH="stable-gcc"
+ARM_LINUX_ANDROIDEABI_VERSION="arm-linux-androideabi-"
+AARCH64_LINUX_ANDROID_VERSION="aarch64-linux-android-"
+AARCH64_LINUX_GNU_VERSION="aarch64-linux-gnu-"
+```
+
+### Execution
 ```bash
 $ sudo chmod +x buildkernel.sh && sudo ./buildkernel.sh 
 ```
-### Changelog
+### All Changelog
 
 ### K1.2.6 STABLE 20231120
 
