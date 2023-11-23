@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Ali kernel by thisfeeling_dev
+kernel.string=Moto G(6) Custom Kernel by thisfeeling
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
