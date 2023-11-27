@@ -8,7 +8,7 @@ A shell-based script that allows you to download/compile an Android kernel and a
 
 ### Features
 
-**-You can manually configure the script to your liking "MANUAL_ENVIROMENT", "manual_configure_build".**
+**-You can manually configure the script to your liking "MANUAL_ENVIROMENT".**
 
 **-You can download toolchain only setting config.sh git/wget.**
 
