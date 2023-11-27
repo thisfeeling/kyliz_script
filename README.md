@@ -101,7 +101,7 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 
 **-Now you can manually configure the script to your liking "MANUAL_ENVIROMENT", "manual_configure_build".**
 
-**-Added "config_enviroment", and file "config.sh".**
+**-Added config_enviroment file "config.sh".**
 
 **-Added "check_root".**
 
