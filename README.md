@@ -2,7 +2,15 @@
 
 A shell-based script that allows you to download/compile an Android kernel and also create a flashable zip via recovery.
 
+### Avaible languages
+
+**-es_CO by default (System languages coming soon!).**
+
 ### Features
+
+**-You can manually configure the script to your liking "MANUAL_ENVIROMENT", "manual_configure_build".**
+
+**-You can download toolchain only setting config.sh git/wget.**
 
 **-Some processes like "CLANG_TOOLCHAIN_VERSION" are automated and among others.**
 
