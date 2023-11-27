@@ -45,7 +45,7 @@ KERNEL_TYPE="BETA"
 KERNEL_ZIP_NAME="Perf"
 ARCHITECTURE="arm64" # arm64/arm
 DT_EXT="dtb" # dtb/dts
-MAKE_PREFERRED_OUT=mrproper # mrproper/clean
+MAKE_PREFERRED_OUT="mrproper" # mrproper/clean
 # ENVIROMENT TOOLS In case DOWNLOAD_TOOLS=true MANUAL_ENVIROMENT=false
 # CLANG CONFIG
 CLANG_TREE="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/f8e856556909898bd35ee8eae829437721b5a3db/clang-r353983e.tar.gz"
