@@ -10,7 +10,6 @@ do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=ali
-device.name2=ali_retail
 '; } # end properties
 
 # shell variables
