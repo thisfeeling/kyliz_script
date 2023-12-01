@@ -100,6 +100,34 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 ```
 ### All Changelog
 
+### K1.2.9 STABLE 20231201
+
+**-Added "config_colors".**
+
+**-Improvements "show_status", "show_status_color".**
+
+**-Improvements "config_enviroment", Added check updates system.**
+
+**-Deleted "process_configuration_preset", "process_clone_kernel", "process_download_tools" and was remplazed by "selected_process", "manual_process", "automatic_process".**
+
+**-Deleted "process_temp_files", "clean_temp_files", "DELETE_TEMP_FILES".**
+
+**-Deleted "validate_environment_variables".**
+
+**-Deleted "verify_output_files", and be put in "compile_kernel".**
+
+**-Deleted "process_show_system_info", "SYSTEM_INFO".**
+
+**-Deleted "check_os", "check_root", and was remplazed by "check".**
+
+**-Deleted "sudo" in some code, to avoid errors.**
+
+**-Deleted "validate_dependencies", "install_missing_dependencies".**
+
+**-Obsolete code was deleted.**
+
+**-Fixed some code bugs.**
+
 ### K1.2.8 STABLE 20231127
 
 **-Now you can manually configure the script to your liking "MANUAL_ENVIROMENT", "manual_configure_build".**
