@@ -27,14 +27,13 @@ A shell-based script that allows you to download/compile an Android kernel and a
 ```bash
 #!/bin/bash
 # CONFIG FILE 
+# Copyright @thisfeeling
 # OPTIONS
-SYSTEM_INFO=false
-BUILD_KERNEL=true
+COMPILE_KERNEL=true
 CREATE_FLASHEABLE_ZIP=true
-DELETE_TEMP_FILES=true
-# CONFIG AUTO/MANUAL
 DOWNLOAD_TOOLS=false
-MANUAL_ENVIROMENT=true
+# CONFIG AUTO/MANUAL
+ENVIROMENT_AUTO=false
 # KERNEL CONFIG
 KERNEL_TREE_BRANCH="11.0"
 KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953"
@@ -43,10 +42,10 @@ KERNEL_DEFCONFIG="ali_defconfig"
 KERNEL_STATUS="UNOFFICIAL"
 KERNEL_TYPE="BETA"
 KERNEL_ZIP_NAME="Perf"
-ARCHITECTURE="arm64" # arm64/arm
+ARCHITECTURE="arm64" #arm64/arm
 DT_EXT="dtb" # dtb/dts
-MAKE_PREFERRED_OUT="mrproper" # mrproper/clean
-# ENVIROMENT TOOLS In case DOWNLOAD_TOOLS=true MANUAL_ENVIROMENT=false
+MAKE_PREFERRED_OUT=mrproper # mrproper/clean
+# ENVIROMENT TOOLS In case ENVIROMENT_AUTO=true DOWNLOAD_TOOLS=true
 # CLANG CONFIG
 CLANG_TREE="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/f8e856556909898bd35ee8eae829437721b5a3db/clang-r353983e.tar.gz"
 CLANG_TREE_BRANCH=""
@@ -64,12 +63,12 @@ AARCH64_LINUX_ANDROID_TREE_VERSION="aarch64-linux-android-"
 AARCH64_LINUX_GNU_TREE="https://github.com/theradcolor/aarch64-linux-gnu"
 AARCH64_LINUX_GNU_TREE_BRANCH="stable-gcc"
 AARCH64_LINUX_GNU_TREE_VERSION="aarch64-linux-gnu-"
-# MANUAL ENVIROMENT TOOLS In case DOWNLOAD_TOOLS=false MANUAL_ENVIROMENT=true
+# MANUAL ENVIROMENT TOOLS ENVIROMENT_AUTO=false DOWNLOAD_TOOLS=false
+MANUAL_KERNEL_DEVICE_CODENAME_DIR="/home/thisfeeling/kyliz/ali"
 MANUAL_CONFIG_CROSS_COMPILE_ARM32="/home/thisfeeling/kyliz/prebuilts/arm-linux-androideabi-/bin/arm-linux-androideabi-"
 MANUAL_CONFIG_CROSS_COMPILE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-android-/bin/aarch64-linux-android-"
 MANUAL_CONFIG_CLANG_TRIPLE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-gnu-/bin/aarch64-linux-gnu-"
 MANUAL_CONFIG_CLANG="/home/thisfeeling/kyliz/prebuilts/clang-r353983e/bin/clang-9"
-
 ```
 
 ### Configure File "anykernel.sh" Example
