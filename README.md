@@ -107,7 +107,7 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 
 **-Improvements "config_enviroment", Added check updates system.**
 
-**-Deleted "process_configuration_preset", "process_clone_kernel", "process_download_tools" and was remplazed by "selected_process", "manual_process", "automatic_process".**
+**-Deleted "process_configuration_preset", "process_clone_kernel", and was remplazed by "selected_process", "manual_process", "automatic_process", "MANUAL_KERNEL_DEVICE_CODENAME_DIR".**
 
 **-Deleted "process_temp_files", "clean_temp_files", "DELETE_TEMP_FILES".**
 
