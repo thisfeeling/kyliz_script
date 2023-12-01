@@ -1,6 +1,6 @@
 ### Kyliz Script
 
-A shell-based script that allows you to download/compile an Android kernel and also create a flashable zip via recovery.
+**A shell-based script that allows you to download/compile an Android kernel and also create a flashable zip via recovery.**
 
 ### Avaible languages
 
@@ -91,7 +91,7 @@ is_slot_device=auto;
 ```
 ### Necessary Files
 
-AnyKernel3 - Dtbtool
+**AnyKernel3 - Dtbtool**
 
 ### Execution kyliz shell script
 ```bash
