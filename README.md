@@ -90,6 +90,9 @@ device.name1=ali
 block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=auto;
 ```
+### Necesary Files
+
+AnyKernel3 - Dtbtool
 
 ### Execution kyliz shell script
 ```bash
