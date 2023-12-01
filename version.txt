@@ -1,1 +1,1 @@
-v1.3.0 BETA
+v1.2.9 STABLE
