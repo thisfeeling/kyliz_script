@@ -90,7 +90,7 @@ device.name1=ali
 block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=auto;
 ```
-### Necesary Files
+### Necessary Files
 
 AnyKernel3 - Dtbtool
 
