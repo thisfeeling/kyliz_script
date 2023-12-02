@@ -1,18 +1,18 @@
 ### Kyliz Script
 
-**A shell-based script that allows you to download/compile an Android kernel and also create a flashable zip via recovery.**
+**A shell-based script that allows you to download/compile auto/manual env an Android kernel and also create a flashable zip via recovery.**
 
 ### Avaible languages
 
-**-es_CO by default (System languages coming soon!).**
+**-en_US es_CO pt_BR.**
 
 ### Features
 
-**-You can manually configure the script to your liking "MANUAL_ENVIROMENT".**
+**-Check updates system, Languages system.**
+
+**-You can manually configure the script to your liking "config.sh".**
 
 **-You can download toolchain only setting config.sh git/wget.**
-
-**-Some processes like "CLANG_TOOLCHAIN_VERSION" are automated and among others.**
 
 **-You can create a custom flashable kernel with this script.** [AnyKernel3](https://github.com/ZyCromerZ/AnyKernel3)
 
@@ -29,12 +29,13 @@
 # CONFIG FILE 
 # Copyright @thisfeeling
 # OPTIONS
-COMPILE_KERNEL=true
+LANGUAGE="en_US" # en_US or es_CO or pt_BR
 CREATE_FLASHEABLE_ZIP=true
 DOWNLOAD_TOOLS=false
+CLONE_KERNEL=true
 # CONFIG AUTO/MANUAL
 ENVIROMENT_AUTO=false
-# KERNEL CONFIG
+# KERNEL CONFIG CLONE_KERNEL=true
 KERNEL_TREE_BRANCH="11.0"
 KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953"
 KERNEL_DEVICE_CODENAME="ali"
@@ -63,7 +64,7 @@ AARCH64_LINUX_ANDROID_TREE_VERSION="aarch64-linux-android-"
 AARCH64_LINUX_GNU_TREE="https://github.com/theradcolor/aarch64-linux-gnu"
 AARCH64_LINUX_GNU_TREE_BRANCH="stable-gcc"
 AARCH64_LINUX_GNU_TREE_VERSION="aarch64-linux-gnu-"
-# MANUAL ENVIROMENT TOOLS ENVIROMENT_AUTO=false DOWNLOAD_TOOLS=false
+# MANUAL ENVIROMENT TOOLS ENVIROMENT_AUTO=false DOWNLOAD_TOOLS=false CLONE_KERNEL=false
 MANUAL_KERNEL_DEVICE_CODENAME_DIR="/home/thisfeeling/kyliz/ali"
 MANUAL_CONFIG_CROSS_COMPILE_ARM32="/home/thisfeeling/kyliz/prebuilts/arm-linux-androideabi-/bin/arm-linux-androideabi-"
 MANUAL_CONFIG_CROSS_COMPILE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-android-/bin/aarch64-linux-android-"
@@ -98,6 +99,16 @@ is_slot_device=auto;
 $ sudo chmod +x setup.sh && sudo ./setup.sh 
 ```
 ### All Changelog
+
+### K1.3.0 STABLE 20231202
+
+**-Added "process_clone_kernel", "CLONE_KERNEL".**
+
+**-Added system languages "config_languages", "LANGUAGE"(LANGUAGES: en_US es_CO pt_BR).**
+
+**-Deleted "show_status", "show_status_color".**
+
+**-Deleted "process_build_kernel", "COMPILE_KERNEL".**
 
 ### K1.2.9 STABLE 20231201
 
