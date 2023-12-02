@@ -100,7 +100,7 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 ```
 ### All Changelog
 
-### K1.3.0 STABLE 20231202
+### K1.3.0 STABLE 20231201
 
 **-Added "process_clone_kernel", "CLONE_KERNEL".**
 
