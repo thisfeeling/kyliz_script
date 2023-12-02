@@ -105,6 +105,8 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 
 **-Fixed error code in "automatic_process", "manual_process".**
 
+**-Fixed unused "preparation_kernel".**
+
 ### K1.3.1 STABLE 20231202
 
 **-Added "process_compile_kernel", "COMPILE_KERNEL".**
