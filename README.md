@@ -101,6 +101,10 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 ```
 ### All Changelog
 
+### K1.3.3 STABLE 20231202
+
+**-Fixed error code in "cleanup_out".**
+
 ### K1.3.2 STABLE 20231202
 
 **-Fixed error code in "automatic_process", "manual_process".**
