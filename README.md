@@ -101,6 +101,10 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 ```
 ### All Changelog
 
+### K1.3.2 STABLE 20231202
+
+**-Fixed error code in "automatic_process", "manual_process".**
+
 ### K1.3.1 STABLE 20231202
 
 **-Added "process_compile_kernel", "COMPILE_KERNEL".**
