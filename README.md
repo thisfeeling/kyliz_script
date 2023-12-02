@@ -33,6 +33,7 @@ LANGUAGE="en_US" # en_US or es_CO or pt_BR
 CREATE_FLASHEABLE_ZIP=true
 DOWNLOAD_TOOLS=false
 CLONE_KERNEL=true
+COMPILE_KERNEL=true
 # CONFIG AUTO/MANUAL
 ENVIROMENT_AUTO=false
 # KERNEL CONFIG CLONE_KERNEL=true
@@ -99,6 +100,12 @@ is_slot_device=auto;
 $ sudo chmod +x setup.sh && sudo ./setup.sh 
 ```
 ### All Changelog
+
+### K1.3.1 STABLE 20231202
+
+**-Added "process_compile_kernel", "COMPILE_KERNEL".**
+
+**-Fixed some code bug in "automatic_process".**
 
 ### K1.3.0 STABLE 20231201
 
