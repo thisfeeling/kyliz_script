@@ -26,47 +26,51 @@
 
 ```bash
 #!/bin/bash
-# CONFIG FILE 
+# KYLIZ CONFIG FILE 
 # Copyright @thisfeeling
-# OPTIONS
-LANGUAGE="en_US" # en_US or es_CO or pt_BR
-CREATE_FLASHEABLE_ZIP=true
-DOWNLOAD_TOOLS=false
+# SCRIPT OPTIONS
+CHECK_UPDATES=true # Recommended CHECK_UPDATES=true
+LANGUAGE="en_US" # Available languages en_US es_CO pt_BR
+# PROCESS OPTIONS
 CLONE_KERNEL=true
+DOWNLOAD_TOOLS=true
 COMPILE_KERNEL=true
+CREATE_FLASHEABLE_ZIP=true
 # CONFIG AUTO/MANUAL
-ENVIROMENT_AUTO=false
-# KERNEL CONFIG CLONE_KERNEL=true
-KERNEL_TREE_BRANCH="11.0"
-KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953"
-KERNEL_DEVICE_CODENAME="ali"
-KERNEL_DEFCONFIG="ali_defconfig"
-KERNEL_STATUS="UNOFFICIAL"
-KERNEL_TYPE="BETA"
-KERNEL_ZIP_NAME="Perf"
-ARCHITECTURE="arm64" #arm64/arm
+ENVIRONMENT_AUTO=true
+# KERNEL CONFIG In case CLONE_KERNEL=true
+KERNEL_TREE_BRANCH="11.0" 
+KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953" 
+KERNEL_DEVICE_CODENAME="ali" 
+KERNEL_DEFCONFIG="ali_defconfig" # {DEVICE}_defconfig
+ARCHITECTURE="arm64" # arm64/arm
 DT_EXT="dtb" # dtb/dts
-MAKE_PREFERRED_OUT=mrproper # mrproper/clean
-# ENVIROMENT TOOLS In case ENVIROMENT_AUTO=true DOWNLOAD_TOOLS=true
+MAKE_PREFERRED_OUT=mrproper # mrproper/clean In case COMPILE_KERNEL=true
+# KERNEL CONFIG FLASHEABLE ZIP In case CREATE_FLASHEABLE_ZIP=true
+KERNEL_STATUS="UNOFFICIAL" 
+KERNEL_TYPE="STABLE" 
+KERNEL_ZIP_NAME="Perf" 
+# AUTOMATIC ENVIROMENT TOOLS In case ENVIROMENT_AUTO=true DOWNLOAD_TOOLS=true
 # CLANG CONFIG
-CLANG_TREE="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/f8e856556909898bd35ee8eae829437721b5a3db/clang-r353983e.tar.gz"
-CLANG_TREE_BRANCH=""
-CLANG_TREE_VERSION="clang-r353983e"
-CLANG_TREE_VERSION_DIR="clang-9"
+CLANG_TREE="https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6875598"
+CLANG_TREE_BRANCH="10.0"
+CLANG_TREE_VERSION="clang-r399163b"
+CLANG_TREE_VERSION_DIR="clang-11"
 # ARM LINUX ANDROIDEABI CONFIG
-ARM_LINUX_ANDROIDEABI_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/refs/heads/pie-release.tar.gz"
+ARM_LINUX_ANDROIDEABI_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/5a8beef7b1aa2c8ca0dfe4a00358559d12dfa3b6.tar.gz"
 ARM_LINUX_ANDROIDEABI_TREE_BRANCH=""
-ARM_LINUX_ANDROIDEABI_TREE_VERSION="arm-linux-androideabi-"
+ARM_LINUX_ANDROIDEABI_TREE_VERSION="arm-linux-androideabi-" # DIR Name
 # AARCH64 LINUX ANDROID CONFIG
-AARCH64_LINUX_ANDROID_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/heads/pie-release.tar.gz"
+AARCH64_LINUX_ANDROID_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/84fb09fafc92a3d9b4d160f049d46c3c784cc941.tar.gz"
 AARCH64_LINUX_ANDROID_TREE_BRANCH=""
-AARCH64_LINUX_ANDROID_TREE_VERSION="aarch64-linux-android-"
+AARCH64_LINUX_ANDROID_TREE_VERSION="aarch64-linux-android-" # DIR Name
 # AARCH64 LINUX GNU CONFIG
-AARCH64_LINUX_GNU_TREE="https://github.com/theradcolor/aarch64-linux-gnu"
-AARCH64_LINUX_GNU_TREE_BRANCH="stable-gcc"
-AARCH64_LINUX_GNU_TREE_VERSION="aarch64-linux-gnu-"
-# MANUAL ENVIROMENT TOOLS ENVIROMENT_AUTO=false DOWNLOAD_TOOLS=false CLONE_KERNEL=false
+AARCH64_LINUX_GNU_TREE="https://github.com/rohan-linux/toolchain-gcc-linaro-11.0.1-2021.03-x86_64_aarch64-linux-gnu"
+AARCH64_LINUX_GNU_TREE_BRANCH="master"
+AARCH64_LINUX_GNU_TREE_VERSION="aarch64-linux-gnu-" # DIR Name
+# MANUAL KERNEL DIR In case CLONE_KERNEL=false
 MANUAL_KERNEL_DEVICE_CODENAME_DIR="/home/thisfeeling/kyliz/ali"
+# MANUAL ENVIROMENT TOOLS ENVIROMENT_AUTO=false DOWNLOAD_TOOLS=false
 MANUAL_CONFIG_CROSS_COMPILE_ARM32="/home/thisfeeling/kyliz/prebuilts/arm-linux-androideabi-/bin/arm-linux-androideabi-"
 MANUAL_CONFIG_CROSS_COMPILE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-android-/bin/aarch64-linux-android-"
 MANUAL_CONFIG_CLANG_TRIPLE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-gnu-/bin/aarch64-linux-gnu-"
@@ -100,6 +104,12 @@ is_slot_device=auto;
 $ sudo chmod +x setup.sh && sudo ./setup.sh 
 ```
 ### All Changelog
+
+### K1.3.4 STABLE 20231202
+
+**-"Improvements in "check_updates", now you can update automatically the script (The config.sh that you edited will not be replaced in update), and added "process_check_updates", "CHECK_UPDATES".**
+
+**-Fixed some code errors/bugs.**
 
 ### K1.3.3 STABLE 20231202
 
