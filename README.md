@@ -103,6 +103,9 @@ is_slot_device=auto;
 ```bash
 $ sudo chmod +x setup.sh && sudo ./setup.sh 
 ```
+
+[**Android Open Source Project**](https://source.android.com)
+
 ### All Changelog
 
 ### K1.3.5 STABLE 20231203
