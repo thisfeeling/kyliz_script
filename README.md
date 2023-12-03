@@ -54,7 +54,7 @@ KERNEL_ZIP_NAME="Perf"
 # CLANG CONFIG
 CLANG_TREE="https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6875598"
 CLANG_TREE_BRANCH="10.0"
-CLANG_TREE_VERSION="clang-r399163b"
+CLANG_TREE_VERSION="clang-r399163b" # DIR Name
 CLANG_TREE_VERSION_DIR="clang-11"
 # ARM LINUX ANDROIDEABI CONFIG
 ARM_LINUX_ANDROIDEABI_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/5a8beef7b1aa2c8ca0dfe4a00358559d12dfa3b6.tar.gz"
@@ -70,7 +70,7 @@ AARCH64_LINUX_GNU_TREE_BRANCH="master"
 AARCH64_LINUX_GNU_TREE_VERSION="aarch64-linux-gnu-" # DIR Name
 # MANUAL KERNEL DIR In case CLONE_KERNEL=false
 MANUAL_KERNEL_DEVICE_CODENAME_DIR="/home/thisfeeling/kyliz/ali"
-# MANUAL ENVIROMENT TOOLS ENVIROMENT_AUTO=false DOWNLOAD_TOOLS=false
+# MANUAL ENVIROMENT TOOLS DIR ENVIROMENT_AUTO=false DOWNLOAD_TOOLS=false
 MANUAL_CONFIG_CROSS_COMPILE_ARM32="/home/thisfeeling/kyliz/prebuilts/arm-linux-androideabi-/bin/arm-linux-androideabi-"
 MANUAL_CONFIG_CROSS_COMPILE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-android-/bin/aarch64-linux-android-"
 MANUAL_CONFIG_CLANG_TRIPLE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-gnu-/bin/aarch64-linux-gnu-"
@@ -107,6 +107,18 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 [**Android Open Source Project**](https://source.android.com)
 
 ### All Changelog
+
+### K1.3.6 STABLE 20231203
+
+**-Added "process_manual_configure_build", "process_auto_configure_build".**
+
+**-Improvements in "compile_kernel".**
+
+**-Improvements in "check_updates".**
+
+**-Changes in "verify_dtb_ziptool", "mv" to "cp".**
+
+**-Obsolete code was deleted, "KBUILDER_VERSION_STRING".**
 
 ### K1.3.5 STABLE 20231203
 
