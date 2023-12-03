@@ -38,15 +38,15 @@ COMPILE_KERNEL=true
 CREATE_FLASHEABLE_ZIP=true
 # CONFIG AUTO/MANUAL
 ENVIRONMENT_AUTO=true
-# KERNEL CONFIG In case CLONE_KERNEL=true
+# KERNEL CONFIG In case CLONE_KERNEL=true COMPILE_KERNEL=true
 KERNEL_TREE_BRANCH="11.0" 
 KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953" 
 KERNEL_DEVICE_CODENAME="ali" 
 KERNEL_DEFCONFIG="ali_defconfig" # {DEVICE}_defconfig
 ARCHITECTURE="arm64" # arm64/arm
 DT_EXT="dtb" # dtb/dts
-MAKE_PREFERRED_OUT=mrproper # mrproper/clean In case COMPILE_KERNEL=true
-# KERNEL CONFIG FLASHEABLE ZIP In case CREATE_FLASHEABLE_ZIP=true
+MAKE_PREFERRED_OUT=mrproper # mrproper/clean 
+# KERNEL FLASHEABLE ZIP CONFIG In case CREATE_FLASHEABLE_ZIP=true
 KERNEL_STATUS="UNOFFICIAL" 
 KERNEL_TYPE="STABLE" 
 KERNEL_ZIP_NAME="Perf" 
@@ -74,7 +74,7 @@ MANUAL_KERNEL_DEVICE_CODENAME_DIR="/home/thisfeeling/kyliz/ali"
 MANUAL_CONFIG_CROSS_COMPILE_ARM32="/home/thisfeeling/kyliz/prebuilts/arm-linux-androideabi-/bin/arm-linux-androideabi-"
 MANUAL_CONFIG_CROSS_COMPILE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-android-/bin/aarch64-linux-android-"
 MANUAL_CONFIG_CLANG_TRIPLE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-gnu-/bin/aarch64-linux-gnu-"
-MANUAL_CONFIG_CLANG="/home/thisfeeling/kyliz/prebuilts/clang-r353983e/bin/clang-9"
+MANUAL_CONFIG_CLANG="/home/thisfeeling/kyliz/prebuilts/clang-r399163b/bin/clang-11"
 ```
 
 ### Configure File "anykernel.sh" Example
@@ -104,6 +104,12 @@ is_slot_device=auto;
 $ sudo chmod +x setup.sh && sudo ./setup.sh 
 ```
 ### All Changelog
+
+### K1.3.5 STABLE 20231203
+
+**-Fixed some code errors/bugs in languages, varible "ARCHITECTURE", "generate_dt".**
+
+**-Obsolete code was deleted, "cleanup_out" was remplazed by "preparation_kernel".**
 
 ### K1.3.4 STABLE 20231202
 
