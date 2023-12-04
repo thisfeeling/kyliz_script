@@ -33,14 +33,13 @@ CHECK_UPDATES=true # Recommended CHECK_UPDATES=true
 LANGUAGE="en_US" # Available languages en_US es_CO pt_BR
 # PROCESS OPTIONS
 CLONE_KERNEL=true
-DOWNLOAD_TOOLS=true
 COMPILE_KERNEL=true
 CREATE_FLASHEABLE_ZIP=true
 # CONFIG AUTO/MANUAL
-ENVIRONMENT_AUTO=true
+ENVIRONMENT_AUTO=true 
 # KERNEL CONFIG In case CLONE_KERNEL=true COMPILE_KERNEL=true
 KERNEL_TREE_BRANCH="12.1" 
-KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953" 
+KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953-Kali" 
 KERNEL_DEVICE_CODENAME="ali" 
 KERNEL_DEFCONFIG="ali_defconfig" # {DEVICE}_defconfig
 ARCHITECTURE="arm64" # arm64/arm
@@ -50,12 +49,12 @@ MAKE_PREFERRED_OUT=mrproper # mrproper/clean
 KERNEL_STATUS="UNOFFICIAL" 
 KERNEL_TYPE="STABLE" 
 KERNEL_ZIP_NAME="Perf" 
-# AUTOMATIC ENVIROMENT TOOLS In case ENVIROMENT_AUTO=true DOWNLOAD_TOOLS=true
+# AUTOMATIC ENVIROMENT TOOLS In case ENVIROMENT_AUTO=true
 # CLANG CONFIG
-CLANG_TREE="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-12.1.0_r27/clang-r416183b1.tar.gz"
-CLANG_TREE_BRANCH=""
-CLANG_TREE_VERSION="clang-r416183b1" # DIR Name
-CLANG_TREE_VERSION_DIR="clang-12"
+CLANG_TREE="https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r417554"
+CLANG_TREE_BRANCH="11.0"
+CLANG_TREE_VERSION="clang-r417554" # DIR Name
+CLANG_TREE_VERSION_DIR="clang-13"
 # ARM LINUX ANDROIDEABI CONFIG
 ARM_LINUX_ANDROIDEABI_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/5a8beef7b1aa2c8ca0dfe4a00358559d12dfa3b6.tar.gz"
 ARM_LINUX_ANDROIDEABI_TREE_BRANCH=""
@@ -69,12 +68,12 @@ AARCH64_LINUX_GNU_TREE="https://github.com/rohan-linux/toolchain-gcc-linaro-11.0
 AARCH64_LINUX_GNU_TREE_BRANCH="master"
 AARCH64_LINUX_GNU_TREE_VERSION="aarch64-linux-gnu-" # DIR Name
 # MANUAL KERNEL DIR In case CLONE_KERNEL=false
-MANUAL_KERNEL_DEVICE_CODENAME_DIR="/home/thisfeeling/kyliz/ali"
-# MANUAL ENVIROMENT TOOLS DIR ENVIROMENT_AUTO=false DOWNLOAD_TOOLS=false
+MANUAL_KERNEL_DIR="/home/thisfeeling/kyliz/ali"
+# MANUAL ENVIROMENT TOOLS DIR ENVIROMENT_AUTO=false
 MANUAL_CONFIG_CROSS_COMPILE_ARM32="/home/thisfeeling/kyliz/prebuilts/arm-linux-androideabi-/bin/arm-linux-androideabi-"
 MANUAL_CONFIG_CROSS_COMPILE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-android-/bin/aarch64-linux-android-"
 MANUAL_CONFIG_CLANG_TRIPLE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-gnu-/bin/aarch64-linux-gnu-"
-MANUAL_CONFIG_CLANG="/home/thisfeeling/kyliz/prebuilts/clang-r416183b1/bin/clang-12"
+MANUAL_CONFIG_CLANG="/home/thisfeeling/kyliz/prebuilts/clang-r417554/bin/clang-13"
 ```
 
 ### Configure File "anykernel.sh" Example
