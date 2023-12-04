@@ -29,7 +29,6 @@
 # KYLIZ CONFIG FILE 
 # Copyright @thisfeeling
 # SCRIPT OPTIONS
-CHECK_UPDATES=true # Recommended CHECK_UPDATES=true
 LANGUAGE="en_US" # Available languages en_US es_CO pt_BR
 # PROCESS OPTIONS
 CLONE_KERNEL=true
