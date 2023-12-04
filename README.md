@@ -39,7 +39,7 @@ CREATE_FLASHEABLE_ZIP=true
 # CONFIG AUTO/MANUAL
 ENVIRONMENT_AUTO=true
 # KERNEL CONFIG In case CLONE_KERNEL=true COMPILE_KERNEL=true
-KERNEL_TREE_BRANCH="11.0" 
+KERNEL_TREE_BRANCH="12.1" 
 KERNEL_TREE="https://github.com/thisfeeling/kernel_motorola_msm8953" 
 KERNEL_DEVICE_CODENAME="ali" 
 KERNEL_DEFCONFIG="ali_defconfig" # {DEVICE}_defconfig
@@ -52,10 +52,10 @@ KERNEL_TYPE="STABLE"
 KERNEL_ZIP_NAME="Perf" 
 # AUTOMATIC ENVIROMENT TOOLS In case ENVIROMENT_AUTO=true DOWNLOAD_TOOLS=true
 # CLANG CONFIG
-CLANG_TREE="https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6875598"
-CLANG_TREE_BRANCH="10.0"
-CLANG_TREE_VERSION="clang-r399163b" # DIR Name
-CLANG_TREE_VERSION_DIR="clang-11"
+CLANG_TREE="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/tags/android-12.1.0_r27/clang-r416183b1.tar.gz"
+CLANG_TREE_BRANCH=""
+CLANG_TREE_VERSION="clang-r416183b1" # DIR Name
+CLANG_TREE_VERSION_DIR="clang-12"
 # ARM LINUX ANDROIDEABI CONFIG
 ARM_LINUX_ANDROIDEABI_TREE="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/5a8beef7b1aa2c8ca0dfe4a00358559d12dfa3b6.tar.gz"
 ARM_LINUX_ANDROIDEABI_TREE_BRANCH=""
@@ -74,7 +74,7 @@ MANUAL_KERNEL_DEVICE_CODENAME_DIR="/home/thisfeeling/kyliz/ali"
 MANUAL_CONFIG_CROSS_COMPILE_ARM32="/home/thisfeeling/kyliz/prebuilts/arm-linux-androideabi-/bin/arm-linux-androideabi-"
 MANUAL_CONFIG_CROSS_COMPILE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-android-/bin/aarch64-linux-android-"
 MANUAL_CONFIG_CLANG_TRIPLE="/home/thisfeeling/kyliz/prebuilts/aarch64-linux-gnu-/bin/aarch64-linux-gnu-"
-MANUAL_CONFIG_CLANG="/home/thisfeeling/kyliz/prebuilts/clang-r399163b/bin/clang-11"
+MANUAL_CONFIG_CLANG="/home/thisfeeling/kyliz/prebuilts/clang-r416183b1/bin/clang-12"
 ```
 
 ### Configure File "anykernel.sh" Example
@@ -99,6 +99,10 @@ is_slot_device=auto;
 
 **AnyKernel3 - Dtbtool**
 
+### TIP
+
+**If you want to put other kernel patches or kernel distributions, you can use the shortcut (CTRL + Z) to pause the script and to resume "/fg"**
+
 ### Execution kyliz shell script
 ```bash
 $ sudo chmod +x setup.sh && sudo ./setup.sh 
@@ -107,6 +111,10 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 [**Android Open Source Project**](https://source.android.com)
 
 ### All Changelog
+
+### K1.3.7 STABLE 20231204
+
+**-Fixed some code bugs.**
 
 ### K1.3.6 STABLE 20231203
 
