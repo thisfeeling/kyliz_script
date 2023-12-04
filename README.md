@@ -99,7 +99,7 @@ is_slot_device=auto;
 
 ### TIP
 
-**If you want to put other kernel patches or kernel distributions, you can use the shortcut (CTRL + Z) to pause the script and to resume "/fg"**
+**-If you want to put other kernel patches or kernel distributions, you can use the shortcut (CTRL + Z) to pause the script and to resume "/fg".**
 
 ### Execution kyliz shell script
 ```bash
