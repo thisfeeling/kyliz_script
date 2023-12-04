@@ -113,6 +113,8 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 
 ### K1.3.8 STABLE 20231204
 
+**-Fixed some code bugs.**
+
 **-Fixed some language code bugs.**
 
 **-Obsolete code was deleted, "DOWNLOAD_TOOLS" and was remplazed by "ENVIRONMENT_AUTO".**
