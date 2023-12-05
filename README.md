@@ -112,6 +112,8 @@ $ sudo chmod +x setup.sh && sudo ./setup.sh
 
 ### K1.3.8 STABLE 20231204
 
+**-(check_updates forced).**
+
 **-Fixed some code bugs.**
 
 **-Fixed some language code bugs.**
